@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ordernow</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src=
+"https://code.jquery.com/jquery-1.12.4.min.js">
+  </script>
+<link rel="stylesheet" href="ordernow.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a href="Index.html"><img src="images/logo.jpeg" class="navbar-brand" href="#" height="100rem" width="100rem"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 margin-left 100px">
+          <li class="nav-item">
+            <a class="nav-link active" href="Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Abou.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      <!-- </div> -->
+      <!-- <div class="right"> -->
+        <a href="login.html"><img src="images/login.png" height="80rem" width="80rem" style="padding: 10px;"></a>
+        <img src="images/shopping-cart-removebg-preview.png" height="70rem" width="70rem" >
+
+      </div>
+    </div>
+  </nav>
+  <br>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Donuts</h5>
+        </div>
+        <div class="card-footer">
+          <input type="button" id="cart" value="Add to cart">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cup Cakes</h5>
+          
+        </div>
+        <div class="card-footer">
+          <input type="button" id="cart2" value="Add to cart">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Croissants</h5>
+          
+        </div>
+        <div class="card-footer">
+          <input type="button" id="cart3" value="Add to cart">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/Blueberry.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Blueberry</h5>
+        </div>
+        <div class="card-footer">
+          <input type="button" id="cart4" value="Add to cart">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/Mangoglaze.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mangoglaze</h5>
+        </div>
+        <div class="card-footer">
+          <input type="button" id="cart5" value="Add to cart">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/cinnamon twist.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cinnamon Twist</h5>
+        </div>
+        <div class="card-footer">
+          <input type="button" id="cart6" value="Add to cart">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/redvevet.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Red Velvet Cake</h5>
+        </div>
+        <div class="card-footer">
+          <input type="button" id="cart7" value="Add to cart">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/penaut butter.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Peanut Butter Cake</h5>
+        </div>
+        <div class="card-footer">
+          <input type="button" id="cart8" value="Add to cart">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/dark.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dark Chocolate Cake</h5>
+        </div>
+        <div class="card-footer">
+          <input type="button" id="cart9" value="Add to cart">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/Matcha Croissants.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Matcha Croissants</h5>
+        </div>
+        <div class="card-footer">
+          <input type="button" id="cart10" value="Add to cart">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/Pecan Pie Caramel Croissants.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pecan Pie Carmel Croissants</h5>
+        </div>
+        <div class="card-footer">
+          <input type="button" id="cart11" value="Add to cart">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/Salted Caramel Cream Croissants.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Salted Caramel Cream Croissants</h5>
+        </div>
+        <div class="card-footer">
+          <input type="button" id="cart12" value="Add to cart">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="images/logo.jpeg" class="rounded me-2" alt="..." height="20rem" width="20rem">
+        <strong class="me-auto">Aroha</strong>
+        <small>Just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Yay! Your item added to cart.
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+        $("#cart").click(function() {
+            $("#cart").prop("value", "Added to cart");
+        });
+    });
+    $(document).ready(function() {
+        $("#cart2").click(function() {
+            $("#cart2").prop("value", "Added to cart");
+        });
+    });
+    $(document).ready(function() {
+        $("#cart3").click(function() {
+            $("#cart3").prop("value", "Added to cart");
+        });
+    });
+    $(document).ready(function() {
+        $("#cart4").click(function() {
+            $("#cart4").prop("value", "Added to cart");
+        });
+    });
+    $(document).ready(function() {
+        $("#cart5").click(function() {
+            $("#cart5").prop("value", "Added to cart");
+        });
+    });
+    $(document).ready(function() {
+        $("#cart6").click(function() {
+            $("#cart6").prop("value", "Added to cart");
+        });
+    });
+    $(document).ready(function() {
+        $("#cart7").click(function() {
+            $("#cart7").prop("value", "Added to cart");
+        });
+    });
+    $(document).ready(function() {
+        $("#cart8").click(function() {
+            $("#cart8").prop("value", "Added to cart");
+        });
+    });
+    $(document).ready(function() {
+        $("#cart9").click(function() {
+            $("#cart9").prop("value", "Added to cart");
+        });
+    });
+    $(document).ready(function() {
+        $("#cart10").click(function() {
+            $("#cart10").prop("value", "Added to cart");
+        });
+    });
+    $(document).ready(function() {
+        $("#cart11").click(function() {
+            $("#cart11").prop("value", "Added to cart");
+        });
+    });
+    $(document).ready(function() {
+        $("#cart12").click(function() {
+            $("#cart12").prop("value", "Added to cart");
+        });
+    });
+
+    const toastTrigger = document.getElementById('cart')
+const toastLive = document.getElementById('liveToast')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLive)
+
+    toast.show()
+  })
+}
+const toastTrigger2 = document.getElementById('cart2')
+const toastLive2 = document.getElementById('liveToast')
+if (toastTrigger2) {
+  toastTrigger2.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLive2)
+
+    toast.show()
+  })
+}
+const toastTrigger3 = document.getElementById('cart3')
+const toastLive3 = document.getElementById('liveToast')
+if (toastTrigger3) {
+  toastTrigger3.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLive3)
+
+    toast.show()
+  })
+}
+const toastTrigger4 = document.getElementById('cart4')
+const toastLive4 = document.getElementById('liveToast')
+if (toastTrigger4) {
+  toastTrigger4.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLive4)
+
+    toast.show()
+  })
+}
+const toastTrigger5 = document.getElementById('cart5')
+const toastLive5 = document.getElementById('liveToast')
+if (toastTrigger5) {
+  toastTrigger5.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLive5)
+
+    toast.show()
+  })
+}
+const toastTrigger6 = document.getElementById('cart6')
+const toastLive6 = document.getElementById('liveToast')
+if (toastTrigger6) {
+  toastTrigger6.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLive6)
+
+    toast.show()
+  })
+}
+const toastTrigger7 = document.getElementById('cart7')
+const toastLive7 = document.getElementById('liveToast')
+if (toastTrigger7) {
+  toastTrigger7.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLive7)
+
+    toast.show()
+  })
+}
+const toastTrigger8 = document.getElementById('cart8')
+const toastLive8 = document.getElementById('liveToast')
+if (toastTrigger8) {
+  toastTrigger8.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLive8)
+
+    toast.show()
+  })
+}
+const toastTrigger9 = document.getElementById('cart9')
+const toastLive9 = document.getElementById('liveToast')
+if (toastTrigger9) {
+  toastTrigger9.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLive9)
+
+    toast.show()
+  })
+}
+const toastTrigger10 = document.getElementById('cart10')
+const toastLive10 = document.getElementById('liveToast')
+if (toastTrigger10) {
+  toastTrigger10.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLive10)
+
+    toast.show()
+  })
+}
+const toastTrigger11 = document.getElementById('cart11')
+const toastLive11 = document.getElementById('liveToast')
+if (toastTrigger11) {
+  toastTrigger11.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLive11)
+
+    toast.show()
+  })
+}
+const toastTrigger12 = document.getElementById('cart12')
+const toastLive12 = document.getElementById('liveToast')
+if (toastTrigger12) {
+  toastTrigger12.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLive12)
+
+    toast.show()
+  })
+}
+    
+</script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<footer class="footer" >
+
+  <div class="footer-left">
+          
+<a href="Untitled-1.html">Sitemap</a>
+<a href="Untitled-1.html">Contact Us</a>
+<a href="Untitled-1.html">Delivery Options</a>
+<a href="Untitled-1.html">Reviews</a>
+          </ul></li>
+          </div>
+
+           <div class="features">
+              
+  <a href="">Sign up for news letter</a>
+  <a href="">Terms of service</a>
+  <a href="#">Promotions</a>
+  <a href="">FAQ's </a>
+              </ul>
+          </div>
+          <div class="footer-right" style="width:25%">
+             <a href="Untitled-1.html"><p style="font-size:25px; margin:0px"> Chat with us<i class=" fa fa-solid fa-comments" style="font-size: 50px;margin-left: 05%; cursor: pointer;"></i></p></a>
+              <br>
+              <a href="https://www.facebook.com/login.php"><i class="fa fa-facebook" style="font-size: 50px; margin-left: 10px;color: blue ; cursor: pointer;"></i></a>
+              <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram" style="font-size: 50px; margin-left: 10px; color: #E4405F; cursor: pointer;"></i></a>
+              <a href="https://twitter.com/login/"><i class="fa fa-twitter" style="font-size: 50px; margin-left: 10px; color: #1DA1F2; cursor: pointer;"></i></a>
+              
+
+          <p style="font-size: 30">
+              Follow us on our social media website
+          </p>
+</div>
+
+</footer>
+</html>

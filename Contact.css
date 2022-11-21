@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/dessert.jpg); 
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#navbarTogglerDemo02 img:hover{
+    transform: scale(1.3);
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+  /* background-image: url(images/bg-patterrn.png); */
+  background:  linear-gradient(to right,#4cb4fa,#1ffd56);
+  }
+#navbarTogglerDemo02{
+    margin-left: 10rem;
+    
+}
+input.form-control.me-2{
+    padding-right: 0%;
+    border-right: 0%;
+}
+img.navbar-brand{
+  border: 2px solid orange;
+  padding: 0px;
+}
+.nav-link.active{
+  /* font-family: cursive; */
+  font-weight: bolder;
+  cursor: pointer;
+}
+.card.col-md-6{
+  margin-top: 8%;
+  margin-bottom: 8%;
+  border-radius: 5%;
+  /* float: right; */
+}
+button.btn.btn-primary{
+  text-align: center;
+}
+input#inputEmail4.form-control{
+  border: none;
+  border-bottom: 1px solid black;
+}
+footer{
+    background-color: azure;
+    /* border: 2px solid orange; */
+    /* margin-left: 20px;
+    
+    
+    margin-right: 20px; */
+    background:  linear-gradient(to right,#d01d5984,#a97b1fb0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: aliceblue;
+    
+  }
+  .footer a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .footer-left{
+    margin: 2%;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .features{
+    margin: 2%;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+  }
+  .infor{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 5%;
+  }
+  @media screen and (max-width:900px) {
+    .infor{
+      justify-content: center;
+    }
+    
+  }
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    #navbarTogglerDemo02{
+        margin: 0%;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    footer{
+        display: block;
+    }
+    
+  }

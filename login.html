@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroha-Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="form-box">
+            
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+            <button type="button" class="toggle-btn" onclick="registration()">Registration</button>
+        </div>
+        
+        <div class="social-icons">
+          <a  href="https://www.instagram.com/accounts/login/" target="_blank"><img src="images/instragrm1.jfif" style="width: 25px; height:25px;" ></a>
+          <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue" target="_blank"><img src="images/google1.png" style="width: 25px; height:25px;"></a> 
+      <a href="https://twitter.com/LOGIN" target="_blank"><img src="images/twitter.png" style="width: 25px; height:25px;"></a> 
+         </div>
+<!-- <form  id="login" class="input-group"> -->
+    <form id="login" class="input-group" name="RegForm" action="Index.html" onsubmit=" return login1()" method="post">
+
+<input type="text" class="input-field" placeholder="user id" name="userId" required> 
+
+<input type="password" class="input-field" placeholder="Enter your password" name="pwd" required> 
+
+<input type="checkbox" class="chech-box"> <span>Remember password</span> 
+<button type="submit" class="submit-btn" onclick="login1()">Log in</button>
+</form>
+<form id="registration"  class="input-group">
+<!-- <form  class="input-group"> -->
+<input type="text" class="input-field" placeholder="user id" required> 
+<input type="password" class="input-field" placeholder="Enter your password" required> 
+<input type="email" class="input-field" placeholder="Enter your email" required> 
+
+<input type="checkbox" class="chech-box"> <span>Remember password</span> 
+<button type="submit" class="submit-btn">Log in</button>
+</form>
+        </div>
+
+    </div>
+    <script>
+       var x = document.getElementById("login");
+       var y = document.getElementById("registration");
+       var z = document.getElementById("btn");
+     function registration(){
+          x.style.left="-400px" ;
+          y.style.left="50px" ;
+       z.style.left="110px" ;
+
+       }
+      function login(){
+          x.style.left="50px" ;
+          y.style.left="450px" ;
+       z.style.left="0px" ;
+       
+
+ }
+ function login1() {
+                    var user = document.forms["RegForm"]["userId"];
+                    var passwrd = document.forms["RegForm"]["pwd"];
+
+                    if (user.value == "") {
+                        name.focus();
+                        return false;
+                    }
+                    if (passwrd.value == "") {
+                        fname.focus();
+                        return false;
+                    }
+                    return true;
+ }
+    </script>
+</body>
+</html>
